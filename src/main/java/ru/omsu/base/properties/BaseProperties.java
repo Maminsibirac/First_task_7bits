@@ -1,14 +1,18 @@
 package ru.omsu.base.properties;
 
+import org.apache.log4j.Logger;
+import ru.omsu.base.xml.BaseXml;
 import ru.omsu.reader.xml.IReaderXML;
 
 /**
  * BaseProperties - The class stores configuration of the program.
  */
-public class BaseProperties {
+public class BaseProperties implements BaseXml {
     private int lengthIndent;
     private String indent;
     private String newLine;
+    private static final Logger logger = Logger.getLogger(BaseProperties.class);
+
 
     /**
      * getIndent() - Method returns the string 'indent'.
@@ -57,9 +61,11 @@ public class BaseProperties {
     public BaseProperties(IReaderXML readerXML) {
         indent = "";
 
+
         if(readerXML.getDocument() == null) {
             lengthIndent = 4;
             newLine = "\n";
+            logger.warn("Xml document is not find! Using standard configuration");
         }
         else {
             if(readerXML.getChildValue("system").equals("Windows")) {

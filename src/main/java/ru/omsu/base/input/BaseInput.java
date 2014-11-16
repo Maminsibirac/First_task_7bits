@@ -1,9 +1,13 @@
 package ru.omsu.base.input;
 
+import ru.omsu.base.Char.BaseChar;
+
 /**
- * BaseInput - The class stores the characters received from the stream and the previous character.
+ * BaseInput - The class stores the characters received from the stream
+ * and the previous character.
+ * Implements an interface BaseChar.
  */
-public class BaseInput {
+public class BaseInput implements BaseChar {
     private char prevSymbol;
     private char inputSymbol;
 
@@ -32,7 +36,8 @@ public class BaseInput {
     }
 
     /**
-     * setInputSymbol(char) - Method sets a field of class incoming character from stream.
+     * setInputSymbol(char) - Method sets a field of class incoming character
+     * from stream.
      * @param inputSymbol
      */
     public void setInputSymbol(char inputSymbol) {

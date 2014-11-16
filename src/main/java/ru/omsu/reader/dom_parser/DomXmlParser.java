@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import ru.omsu.exception.NullTagValueException;
 import ru.omsu.reader.xml.IReaderXML;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -58,6 +59,15 @@ public class DomXmlParser implements IReaderXML {
     public String getChildValue(String tagName) {
         NodeList nodeList = document.getElementsByTagName(tagName);
         Element element = (Element)nodeList.item(0);
+
+        try {
+             String result = element.getChildNodes().item(0).getNodeValue();
+        }
+        catch(NullPointerException e) {
+            NullTagValueException exception = new NullTagValueException("Tag with name: '" + tagName + "' is Empty!");
+            logger.error(exception.getMessageError());
+            System.exit(1);
+        }
 
         return element.getChildNodes().item(0).getNodeValue();
     }
