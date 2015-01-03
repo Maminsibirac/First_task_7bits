@@ -1,8 +1,8 @@
 package ru.omsu.formatted.indent;
 
 
-import ru.omsu.base.input.BaseInput;
-import ru.omsu.base.properties.BaseProperties;
+import ru.omsu.base.conditions.Conditions;
+import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
@@ -30,33 +30,38 @@ public class IndentFormat implements IFormatChar {
 
     /**
      * formatter(BaseInput) - Method formats incoming character, if that is 'brace left' or 'brace right'.
-     * @param baseInput
+     * @param memory
      * @return
      */
-    public String formatter(BaseInput baseInput, BaseProperties baseProperties) {
-        char prevSymbol = baseInput.getPrevSymbol();
-        char inputSymbol = baseInput.getInputSymbol();
+    public String formatter(Memory memory) {
+        char prevSymbol = memory.getPrevSymbol();
+        char inputSymbol = memory.getInputSymbol();
+        Conditions conditions = Conditions.onCreate();
         StringBuilder result;
 
-        if(inputSymbol == '{') {
-            result = new StringBuilder();
+        if(inputSymbol == '{' || inputSymbol == '}') {
+            if(conditions.isCode() || conditions.isBlockComments()) {
+                result = new StringBuilder();
+                if (inputSymbol == '{') {
+                    if (prevSymbol != ' ') {
+                        result.append(' ');
+                    }
 
-            if (prevSymbol != ' ') {
-                result.append(' ');
+                    memory.increaseIndent();
+                    memory.setInputSymbol(' ');
+                    return result.append(inputSymbol + memory.getNewLine() + memory.getIndent()/*indent*/).toString();
+                } else if (inputSymbol == '}') {
+                    memory.reduceIndent();
+                    memory.setInputSymbol(' ');
+
+                    return result.append(memory.getNewLine() + memory.getIndent() + inputSymbol +
+                            memory.getNewLine() + memory.getIndent()).toString();
+                }
             }
-
-            baseProperties.increaseIndent();
-            baseInput.setInputSymbol(' ');
-            return result.append(inputSymbol + baseProperties.getNewLine() + baseProperties.getIndent()/*indent*/).toString();
-        } else if(inputSymbol == '}') {
-            result = new StringBuilder();
-            baseProperties.reduceIndent();
-            baseInput.setInputSymbol(' ');
-
-            return result.append(baseProperties.getNewLine() + baseProperties.getIndent() + inputSymbol +
-                    baseProperties.getNewLine() + baseProperties.getIndent()).toString();
+            else {
+                return Character.toString(inputSymbol);
+            }
         }
-
         return "";
     }
 }

@@ -1,5 +1,7 @@
 package ru.omsu.writer.stream;
 
+import ru.omsu.reader.stream.IReaderStream;
+
 /**
  * IWriterStream - Interface for writing a string in some stream.
  */
@@ -14,11 +16,6 @@ public interface IWriterStream {
      * writeFile - Method write string to a file.
      * @param text
      */
-    public void writeValue(String text);
+    public void writeValue(String text, IReaderStream readerStream);
 
-    /**
-     * writeClose - Method to close the stream for write.
-     * @return
-     */
-    public boolean writeClose();
 }

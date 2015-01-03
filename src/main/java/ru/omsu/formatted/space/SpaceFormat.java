@@ -1,8 +1,6 @@
 package ru.omsu.formatted.space;
 
-
-import ru.omsu.base.input.BaseInput;
-import ru.omsu.base.properties.BaseProperties;
+import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
@@ -53,21 +51,23 @@ public class SpaceFormat implements IFormatChar {
 
     /**
      * formatter(BaseInput) - Method formats incoming character, if that is 'space'.
-     * @param baseData
      * @return
      */
-    public String formatter(BaseInput baseData, BaseProperties baseProperties) {
-        char prevSymbol = baseData.getPrevSymbol();
-        char inputSymbol = baseData.getInputSymbol();
-        StringBuilder result = new StringBuilder();
+    public String formatter(Memory memory) {
+        char prevSymbol = memory.getPrevSymbol();
+        char inputSymbol = memory.getInputSymbol();
+        StringBuilder result;
 
         if(equalsChar(inputSymbol)) {
-            if (prevSymbol != ';' && prevSymbol != ' ' && prevSymbol != 'n'
-                    && prevSymbol != '}' && prevSymbol != '{' && prevSymbol != '\n' && prevSymbol != '(') {
+            result = new StringBuilder();
+            if (prevSymbol != ' ' && prevSymbol != 'n'
+                    && prevSymbol != '}' && prevSymbol != '{' && prevSymbol != '\n'
+                        && prevSymbol != '(') {
                 result.append(inputSymbol);
 
-                return  result.toString();
+                return result.toString();
             }
+
         }
 
         return "";

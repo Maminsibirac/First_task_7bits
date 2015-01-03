@@ -1,10 +1,7 @@
 package ru.omsu.formatter_code;
 
-import ru.omsu.base.input.BaseInput;
-import ru.omsu.base.properties.BaseProperties;
-import ru.omsu.formatted.another_char.AnotherCharFormat;
-import ru.omsu.formatted.list_format.ListCharFormat;
-import ru.omsu.reader.dom_parser.DomXmlParser;
+import ru.omsu.base.memory.Memory;
+import ru.omsu.formatted.char_format.CharFormat;
 import ru.omsu.reader.stream.IReaderStream;
 import ru.omsu.writer.stream.IWriterStream;
 
@@ -20,28 +17,36 @@ public class FormatterJavaCode {
      * @param readerStream
      * @param writerStream
      */
-    public static void formatter(IReaderStream readerStream, IWriterStream writerStream) {
-        ListCharFormat listCharFormat = new ListCharFormat();
-        int sizeListFormat = listCharFormat.getListFormat().size();
-        AnotherCharFormat anotherCharFormat = AnotherCharFormat.onCreate();
-        BaseProperties baseProperties = new BaseProperties(new DomXmlParser("src/main/resources/config"));
-        BaseInput baseInput = new BaseInput();
+    public void formatter(IReaderStream readerStream, IWriterStream writerStream) {
         String text = "";
 
         while(readerStream.hasNextValue()) {
-            baseInput.setInputSymbol(readerStream.readNextValue());
-
-            for (int index = 0; index < sizeListFormat; ++index) {
-                text += listCharFormat.getListFormat().get(index).formatter(baseInput, baseProperties);
-            }
-
-            if (text.isEmpty()) {
-                text += anotherCharFormat.formatter(baseInput, baseProperties);
-            }
-
-            writerStream.writeValue(text);
-            text = "";
+            text = charFormatter(readerStream);
+            writerStream.writeValue(text, readerStream);
         }
-        writerStream.writeClose();
+    }
+
+
+
+    private String charFormatter(IReaderStream readerStream) {
+        CharFormat charFormat = CharFormat.onCreate();
+        int sizeListFormat = charFormat.getFormat().size();
+        Memory memory = Memory.onCreate();
+        char input;
+        String text = "";
+
+        memory.setInputSymbol(readerStream.readNextValue());
+        input = memory.getInputSymbol();
+        for (int index = 0; index < sizeListFormat; ++index) {
+            text += charFormat.getFormat().get(index).formatter(memory);
+        }
+
+        if (text.isEmpty()) {
+            if(input != '\n' && input != ' ') {
+                text += input;
+            }
+        }
+
+        return text;
     }
 }

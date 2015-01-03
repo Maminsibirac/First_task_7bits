@@ -1,2 +1,220 @@
 
-2014-11-16 03:48:26 INFO  ClientClass:52 - Program is done!
+2014-12-31 12:43:18 INFO  ClientClass:50 - Program is done!
+2014-12-31 14:58:03 INFO  ClientClass:50 - Program is done!
+2014-12-31 15:01:46 INFO  ClientClass:50 - Program is done!
+2015-01-02 17:55:58 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:02:35 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:03:55 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:05:01 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:06:11 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:26:54 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:40:37 WARN  ClientClass:30 - Possibly the program crashes!
+2015-01-02 18:40:37 ERROR ReaderFile:33 - java.io.FileNotFoundException:  (No such file or directory)
+2015-01-02 18:42:29 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:43:16 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:43:35 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:47:48 INFO  ClientClass:50 - Program is done!
+2015-01-02 18:52:25 INFO  ClientClass:50 - Program is done!
+2015-01-02 20:59:41 ERROR WriterFile:34 - java.io.FileNotFoundException
+2015-01-02 20:59:42 ERROR WriterFile:34 - java.io.FileNotFoundException
+2015-01-02 20:59:49 ERROR WriterFile:34 - java.io.FileNotFoundException
+2015-01-02 20:59:50 ERROR WriterFile:34 - java.io.FileNotFoundException
+2015-01-02 20:59:57 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:06:29 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:09:49 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:10:26 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:29:13 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:35:37 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:39:20 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:51:19 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:52:27 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:56:09 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:57:04 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:57:53 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:58:50 INFO  ClientClass:50 - Program is done!
+2015-01-02 21:59:32 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:00:14 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:01:56 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:03:56 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:07:09 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:09:51 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:12:53 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:22:55 INFO  ClientClass:50 - Program is done!
+2015-01-02 22:25:49 INFO  ClientClass:50 - Program is done!
+2015-01-03 17:53:55 INFO  ClientClass:50 - Program is done!
+2015-01-03 17:54:56 INFO  ClientClass:50 - Program is done!
+2015-01-03 17:58:42 INFO  ClientClass:50 - Program is done!
+2015-01-03 18:46:47 INFO  ClientClass:50 - Program is done!
+2015-01-03 23:18:15 INFO  ClientClass:50 - Program is done!

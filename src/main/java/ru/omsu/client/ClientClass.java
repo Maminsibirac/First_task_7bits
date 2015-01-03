@@ -19,6 +19,7 @@ public class ClientClass {
         IReaderStream readerFile;
         IWriterStream writerFile;
         String fileName = new String();
+        FormatterJavaCode formatterJavaCode = new FormatterJavaCode();
 
         do {
             System.out.print("Enter the file name with the Java code: ");
@@ -28,9 +29,7 @@ public class ClientClass {
             catch(NoSuchElementException e) {
                 logger.warn("Possibly the program crashes!");
             }
-
             readerFile = new ReaderFile(fileName);
-            for(int i = 0; i < 100000000; ++i);
         } while(!readerFile.existsFile());
 
 
@@ -44,10 +43,9 @@ public class ClientClass {
             }
 
             writerFile = new WriterFile(fileName);
-            for(int i = 0; i < 100000000; ++i);
         } while(!writerFile.existsFile());
 
-        FormatterJavaCode.formatter(readerFile, writerFile);
+        formatterJavaCode.formatter(readerFile, writerFile);
 
         logger.info("Program is done!");
     }

@@ -1,8 +1,8 @@
 package ru.omsu.formatted.semicolon;
 
 
-import ru.omsu.base.input.BaseInput;
-import ru.omsu.base.properties.BaseProperties;
+import ru.omsu.base.conditions.Conditions;
+import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
@@ -52,38 +52,25 @@ public class SemicolonFormat implements IFormatChar {
     }
 
     /**
-     * formatter(BaseInput) - Method formats incoming character, if that is 'semicolon'.
-     * @param baseData
-     * @return
-     */
-    public String formatter(BaseInput baseData, String newLine) {
-        char inputSymbol = baseData.getInputSymbol();
-        StringBuilder result;
-
-        if (equalsChar(inputSymbol)) {
-            result = new StringBuilder(3);
-            result.append(";" + newLine);
-            return result.toString();
-        }
-
-        return "";
-    }
-
-    /**
      * formatter(BaseInput, String) - Method formats incoming character, if that is 'space'.
      * Second param is string, defines a new line.
-     * @param baseData
-     * @param baseProperties
+
      * @return
      */
-    public String formatter(BaseInput baseData, BaseProperties baseProperties) {
-        char inputSymbol = baseData.getInputSymbol();
+    public String formatter(Memory memory) {
+        char inputSymbol = memory.getInputSymbol();
+        Conditions conditions = Conditions.onCreate();
         StringBuilder result;
 
         if (equalsChar(inputSymbol)) {
-            result = new StringBuilder(1 + baseProperties.getNewLine().length());
-            result.append(";" + baseProperties.getNewLine() + baseProperties.getIndent());
-            return result.toString();
+            if(conditions.isCode() || conditions.isBlockComments()) {
+                result = new StringBuilder(1 + memory.getNewLine().length());
+                result.append(";" + memory.getNewLine() + memory.getIndent());
+                return result.toString();
+            }
+            else {
+                return Character.toString(inputSymbol);
+            }
         }
 
         return "";

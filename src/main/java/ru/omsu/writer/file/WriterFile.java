@@ -2,6 +2,7 @@ package ru.omsu.writer.file;
 
 
 import org.apache.log4j.Logger;
+import ru.omsu.reader.stream.IReaderStream;
 import ru.omsu.writer.stream.IWriterStream;
 
 import java.io.File;
@@ -58,7 +59,7 @@ public class WriterFile implements IWriterStream {
      * writeFile() - Method write string to a file.
      * @param text
      */
-    public void writeValue(String text) {
+    public void writeValue(String text, IReaderStream readerStream) {
         try {
             rFile.skipBytes((int)file.length());
             rFile.writeBytes(text);
@@ -66,19 +67,14 @@ public class WriterFile implements IWriterStream {
         } catch (IOException e) {
             logger.error(e);
         }
-    }
 
-    /**
-     * writeClose() - Method to close the stream for write.
-     * @return
-     */
-    public boolean writeClose() {
         try {
-            rFile.close();
+            if(!readerStream.hasNextValue()) {
+                rFile.close();
+            }
         } catch(IOException e) {
             logger.warn(e);
         }
-
-        return true;
     }
+
 }
