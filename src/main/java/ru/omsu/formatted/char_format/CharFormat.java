@@ -12,7 +12,9 @@ import ru.omsu.formatted.space.SpaceFormat;
 
 import java.util.ArrayList;
 
-
+/**
+ * Works with all handlers that are used in the program.
+ */
 public class CharFormat {
     private ArrayList<IFormatChar> listFormat;
     private static boolean createFlag = true;
@@ -35,6 +37,11 @@ public class CharFormat {
         listFormat.add(BlockComments.onCreate());
     }
 
+    /**
+     * Create an instance of class.
+     * Monitors that there has always been one instance of the class.
+     * @return the new instance of class CharFormat.
+     */
     public static CharFormat onCreate() {
         if(createFlag) {
             createFlag = false;
@@ -45,8 +52,8 @@ public class CharFormat {
     }
 
     /**
-     * getFormat() - Method return value listFormat.
-     * @return
+     * Getter.
+     * @return value listFormat.
      */
     public ArrayList<IFormatChar> getFormat() {
         return listFormat;

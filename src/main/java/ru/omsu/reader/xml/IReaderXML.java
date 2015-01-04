@@ -1,19 +1,19 @@
 package ru.omsu.reader.xml;
 
 /**
- * IReaderXML - Interface for reading XML documents.
+ * Interface for reading XML documents.
  */
 public interface IReaderXML {
     /**
-     * getDocument() - Method returns has read XML document.
-     * @return
+     * Getter.
+     * @return has read XML document.
      */
     public org.w3c.dom.Document getDocument();
 
     /**
-     * getChildValue(String tagName) - Method returns value inside the tag, with name 'tagName'.
+     * Read value tag in XML document.
      * @param tagName
-     * @return
+     * @return value inside the tag, with name - tagName.
      */
     public String getChildValue(String tagName);
 }

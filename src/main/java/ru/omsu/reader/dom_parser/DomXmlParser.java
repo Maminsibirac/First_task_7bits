@@ -12,16 +12,15 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
 /**
- * DomXmlParser - The class reads a XML documents, using Dom XML Parser Java API.
- * Implements an interface IReaderXML.
+ * The class reads a XML documents, using Dom XML Parser Java API.
  */
 public class DomXmlParser implements IReaderXML {
     private static final Logger logger = Logger.getLogger(DomXmlParser.class);
     private org.w3c.dom.Document document;
 
     /**
-     * getDocument() - Method returns has read XML document.
-     * @return
+     * Getter.
+     * @return has read XML document.
      */
     public org.w3c.dom.Document getDocument(){
         return document;
@@ -52,9 +51,9 @@ public class DomXmlParser implements IReaderXML {
     }
 
     /**
-     * getChildValue(String tagName) - Method returns value inside the tag, with name 'tagName'.
+     * Read value tag in XML document.
      * @param tagName
-     * @return
+     * @return value inside the tag, with name - tagName.
      */
     public String getChildValue(String tagName) {
         NodeList nodeList = document.getElementsByTagName(tagName);

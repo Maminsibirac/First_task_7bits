@@ -6,14 +6,12 @@ import ru.omsu.reader.stream.IReaderStream;
 import ru.omsu.writer.stream.IWriterStream;
 
 /**
- * FormatterJavaCode - The class s formats Java code. (No format character 'Tab' and more... =))
+ * The class s formats Java code.
  */
 public class FormatterJavaCode {
 
     /**
-     * formatter(IReaderStream readerStream, IWriterStream writerStream) - Method
-     * formats character by character who came to the processing object.
-     *
+     * Formats incoming stream.
      * @param readerStream
      * @param writerStream
      */
@@ -26,8 +24,11 @@ public class FormatterJavaCode {
         }
     }
 
-
-
+    /**
+     * Formats incoming symbol.
+     * @param readerStream
+     * @return formatted symbol.
+     */
     private String charFormatter(IReaderStream readerStream) {
         CharFormat charFormat = CharFormat.onCreate();
         int sizeListFormat = charFormat.getFormat().size();

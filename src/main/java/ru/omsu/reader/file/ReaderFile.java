@@ -9,8 +9,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- * ReaderFile - The class read a character from file stream.
- * Implements an interface IReaderStream.
+ * The class read a character from file stream.
  */
 public class ReaderFile implements IReaderStream{
     private static final Logger logger = Logger.getLogger(ReaderFile.class);
@@ -19,7 +18,7 @@ public class ReaderFile implements IReaderStream{
     private RandomAccessFile bufFile;
 
     /**
-     * Constructor(String).
+     * Constructor.
      * @param fileName
      */
     public ReaderFile(String fileName) {
@@ -35,8 +34,8 @@ public class ReaderFile implements IReaderStream{
     }
 
     /**
-     * existsFile(File) - Method checks the existence of the file.
-     * @return
+     * Checks the existence of the file.
+     * @return true, if the file exists, else false.
      */
     public boolean existsFile() {
         if(file.exists()) {
@@ -47,10 +46,8 @@ public class ReaderFile implements IReaderStream{
     }
 
     /**
-     * hasNextValue() - Method inform whether there is in stream next character.
-     * If he return 'true' - character there is.
-     * If he return 'false' - character isn't there.
-     * @return
+     * Inform whether there is in stream next symbol.
+     * @return true, if you can read symbol from the stream, else false.
      */
     public boolean hasNextValue() {
         if ((file.length() - poison) > 0) {
@@ -61,8 +58,8 @@ public class ReaderFile implements IReaderStream{
     }
 
     /**
-     * readNextValue() - Method read next character in file stream.
-     * @return
+     * Read next symbol in file stream.
+     * @return symbol received from stream.
      */
     public char readNextValue() {
         byte buf[] = new byte[1];

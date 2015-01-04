@@ -4,26 +4,25 @@ import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
- * SpaceFormat - The class formats the character 'space'.
- * Implements an interface IFormatChar.
+ * The class formats the symbol - space.
+ *
  */
 public class SpaceFormat implements IFormatChar {
     private static SpaceFormat spaceFormat;
-    private final char name;
+    private final char space;
     private static boolean createFlag = true;
 
     /**
      * Constructor.
      */
     private SpaceFormat() {
-        name = ' ';
+        space = ' ';
     }
 
     /**
-     * onCreate() - Static method to create a new instance of the class SpaceFormat.
-     * onCreate() must create only one instance.
-     * If instance is create, then method return reference to an instance.
-     * @return
+     * Create an instance of class.
+     * Monitors that there has always been one instance of the class.
+     * @return the new instance of class SpaceFormat.
      */
     public static SpaceFormat onCreate() {
         if(createFlag) {
@@ -35,14 +34,12 @@ public class SpaceFormat implements IFormatChar {
     }
 
     /**
-     * equalsChar(char) - Method checks whether the incoming character is a 'space'.
-     * If return 'true' - yes.
-     * If return 'false' - no.
-     * @param symbol
-     * @return
+     * Compares specified symbol with an incoming parameter.
+     * @param space
+     * @return true, if specified symbol and incoming parameter equal, else false.
      */
-    public boolean equalsChar(char symbol) {
-        if(symbol == name) {
+    public boolean equalsChar(char space) {
+        if(space== this.space) {
             return true;
         }
 
@@ -50,22 +47,20 @@ public class SpaceFormat implements IFormatChar {
     }
 
     /**
-     * formatter(BaseInput) - Method formats incoming character, if that is 'space'.
-     * @return
+     * Formats incoming symbol, if that is space.
+     * @return if incoming symbol is space then his, else empty string.
      */
     public String formatter(Memory memory) {
         char prevSymbol = memory.getPrevSymbol();
         char inputSymbol = memory.getInputSymbol();
-        StringBuilder result;
 
         if(equalsChar(inputSymbol)) {
-            result = new StringBuilder();
+
             if (prevSymbol != ' ' && prevSymbol != 'n'
                     && prevSymbol != '}' && prevSymbol != '{' && prevSymbol != '\n'
                         && prevSymbol != '(') {
-                result.append(inputSymbol);
 
-                return result.toString();
+                return " ";
             }
 
         }

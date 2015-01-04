@@ -6,18 +6,16 @@ import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
- * IndentFormat - The class formats a characters 'braces'.
- * Implements an interface IFormatChar.
+ * The class formats a symbol - braces.
  */
 public class IndentFormat implements IFormatChar {
     private static boolean createFlag = true;
     private static IndentFormat indentFormat;
 
     /**
-     * onCreate() - Static method to create a new instance of the class IndentFormat.
-     * onCreate() must create only one instance.
-     * If instance is create, then method return reference to an instance.
-     * @return
+     * Create an instance of class.
+     * Monitors that there has always been one instance of the class.
+     * @return the new instance of class IndentFormat.
      */
     public static IndentFormat onCreate() {
         if(createFlag) {
@@ -29,9 +27,10 @@ public class IndentFormat implements IFormatChar {
     }
 
     /**
-     * formatter(BaseInput) - Method formats incoming character, if that is 'brace left' or 'brace right'.
+     * Formats incoming symbol, if that is left brace or right brace.
      * @param memory
-     * @return
+     * @return if incoming symbol is right or left brace then formatted string,
+     * else empty string.
      */
     public String formatter(Memory memory) {
         char prevSymbol = memory.getPrevSymbol();
@@ -50,7 +49,7 @@ public class IndentFormat implements IFormatChar {
                     memory.increaseIndent();
                     memory.setInputSymbol(' ');
                     return result.append(inputSymbol + memory.getNewLine() + memory.getIndent()/*indent*/).toString();
-                } else if (inputSymbol == '}') {
+                } else {
                     memory.reduceIndent();
                     memory.setInputSymbol(' ');
 

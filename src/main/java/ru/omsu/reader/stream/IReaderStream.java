@@ -1,24 +1,19 @@
 package ru.omsu.reader.stream;
 
 /**
- * IReaderStream - Interface for reading a character in some stream.
+ * Interface for reading a character in some stream.
  */
 public interface IReaderStream {
-    /**
-     * existsFile() - Method checks the existence of the file.
-     * @return
-     */
-    public boolean existsFile();
 
     /**
-     * hasNextValue() - Method inform whether there is in stream next character.
-     * @return
+     * Inform whether there is in stream next symbol.
+     * @return true, if you can read symbol from the stream, else false.
      */
     public boolean hasNextValue();
 
     /**
-     * readNextValue() - Method read next character in file stream.
-     * @return
+     * Read next character in file stream.
+     * @return symbol received from stream.
      */
     public char readNextValue();
 }

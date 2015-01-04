@@ -11,8 +11,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- * WriterFile - The class writes a string to a stream.
- * Implements an interface IWriterStream.
+ * The class writes a string to a stream.
  */
 public class WriterFile implements IWriterStream {
     private static final Logger logger = Logger.getLogger(WriterFile.class);
@@ -20,7 +19,7 @@ public class WriterFile implements IWriterStream {
     private RandomAccessFile rFile;
 
     /**
-     * Constructor(String).
+     * Constructor.
      * @param fileName
      */
     public WriterFile(String fileName) {
@@ -36,16 +35,16 @@ public class WriterFile implements IWriterStream {
     }
 
     /**
-     * getFile() - Method return value file.
-     * @return
+     * Getter.
+     * @return pointer to a file.
      */
     public File getFile() {
         return file;
     }
 
     /**
-     * existsFile(File) - Method checks the existence of the file.
-     * @return
+     * Checks the existence of the file.
+     * @return true, if the file exists, else false.
      */
     public boolean existsFile() {
         if(file.exists()) {
@@ -56,7 +55,7 @@ public class WriterFile implements IWriterStream {
     }
 
     /**
-     * writeFile() - Method write string to a file.
+     * Write string to a file.
      * @param text
      */
     public void writeValue(String text, IReaderStream readerStream) {

@@ -4,8 +4,7 @@ package ru.omsu.reader.string;
 import ru.omsu.reader.stream.IReaderStream;
 
 /**
- * ReaderString - The class is unnecessary shell over String =)=)=).
- * ReaderString implements IReaderStream.
+ * The class read string.
  */
 public class ReaderString implements IReaderStream {
     private String text;
@@ -21,14 +20,8 @@ public class ReaderString implements IReaderStream {
     }
 
     /**
-     * existsFile() - Method checks the existence of the file.
-     * @return
-     */
-    public boolean existsFile() { return true; }
-
-    /**
-     * hasNextValue() - Method inform whether there is in string next character.
-     * @return
+     * Inform whether there is in string next symbol.
+     * @return true, if you can read symbol from the stream, else false.
      */
     public boolean hasNextValue() {
         if(index >= text.length())
@@ -38,8 +31,8 @@ public class ReaderString implements IReaderStream {
     }
 
     /**
-     * readNextValue() - Method read next character in file string.
-     * @return
+     * Read next symbol in file string.
+     * @return symbol received from stream.
      */
     public char readNextValue() {
         return text.charAt(index++);

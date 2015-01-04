@@ -4,14 +4,14 @@ package ru.omsu.formatted.format;
 import ru.omsu.base.memory.Memory;
 
 /**
- * IFormatChar - Interface for formats character.
+ * Interface for formats character.
  */
 public interface IFormatChar {
 
     /**
-     * formatter(BaseInput) - Method formats incoming character.
+     * Formats incoming character.
      * @param memory
-     * @return
+     * @return formatted string.
      */
     public String formatter(Memory memory);
 }

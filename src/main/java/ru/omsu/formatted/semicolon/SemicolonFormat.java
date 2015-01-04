@@ -6,8 +6,7 @@ import ru.omsu.base.memory.Memory;
 import ru.omsu.formatted.format.IFormatChar;
 
 /**
- * SemicolonFormat - The class formats a character 'semicolon'.
- * Implements an interface IFormatChar.
+ * The class formats a symbol - semicolon.
  */
 public class SemicolonFormat implements IFormatChar {
     private final  char semicolon;
@@ -22,10 +21,9 @@ public class SemicolonFormat implements IFormatChar {
     }
 
     /**
-     * onCreate() - Static method to create a new instance of the class SemicolonFormat.
-     * onCreate() must create only one instance.
-     * If instance is create, then method return reference to an instance.
-     * @return
+     * Create an instance of class.
+     * Monitors that there has always been one instance of the class.
+     * @return the new instance of class SemicolonFormat.
      */
     public static SemicolonFormat onCreate() {
         if(createFlag) {
@@ -37,14 +35,12 @@ public class SemicolonFormat implements IFormatChar {
     }
 
     /**
-     * equalsChar(char) - Method checks whether the incoming character is a 'semicolon'.
-     * If return 'true' - yes.
-     * If return 'false' - no.
-     * @param symbol
-     * @return
+     * Compares specified symbol with an incoming parameter.
+     * @param semicolon
+     * @return true, if specified symbol and incoming parameter equal, else false.
      */
-    public  boolean equalsChar(char symbol) {
-        if(symbol == semicolon) {
+    public  boolean equalsChar(char semicolon) {
+        if(semicolon == this.semicolon) {
             return true;
         }
 
@@ -52,10 +48,11 @@ public class SemicolonFormat implements IFormatChar {
     }
 
     /**
-     * formatter(BaseInput, String) - Method formats incoming character, if that is 'space'.
-     * Second param is string, defines a new line.
-
-     * @return
+     * Formats incoming symbol, if that is semicolon.
+     * @return if incoming symbol is semicolon then result concatenation:
+     * incoming symbol, symbol a newline and indent,
+     * if program in condition code, else incoming symbol.
+     * Else empty string.
      */
     public String formatter(Memory memory) {
         char inputSymbol = memory.getInputSymbol();
