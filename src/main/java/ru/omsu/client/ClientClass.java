@@ -16,8 +16,8 @@ public class ClientClass {
     private static final Logger logger = Logger.getLogger(ClientClass.class);
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        IReaderStream readerFile;
-        IWriterStream writerFile;
+        ReaderFile readerFile;
+        WriterFile writerFile;
         String fileName = new String();
         FormatterJavaCode formatterJavaCode = new FormatterJavaCode();
 
